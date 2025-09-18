@@ -19,6 +19,7 @@ public class TestP4 {
         System.out.println("Is queue empty? " + sys.isEmpty());
 
         sys.addTicket("Forgot user name");
+
         System.out.println("Is queue empty? " + sys.isEmpty());
 
 
