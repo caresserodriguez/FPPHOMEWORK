@@ -2,34 +2,33 @@ package Lesson9.Problem1;
 
 public class P1Test {
     public static void main(String[] args) {
-        ArrayQueueImpl q = new ArrayQueueImpl();
+        ArrayQueueImpl aq = new ArrayQueueImpl();
 
-        // Enqueue elements
-        q.enqueue(10);
-        q.enqueue(20);
-        q.enqueue(30);
-        q.enqueue(40);
-        q.enqueue(50);
+        aq.enqueue(10);
+        aq.enqueue(20);
+        aq.enqueue(30);
+        aq.enqueue(40);
+        aq.enqueue(50);
 
-        System.out.println("Queue: " + q);
-        System.out.println("Peek: " + q.peek());
-        System.out.println("Size: " + q.size());
+        System.out.println("Queue: " + aq);
+        System.out.println("Peek: " + aq.peek());
+        System.out.println("Size: " + aq.size());
 
-        // Dequeue some elements
-        System.out.println("Dequeued: " + q.dequeue());
-        System.out.println("Dequeued: " + q.dequeue());
 
-        System.out.println("Queue after dequeue: " + q);
+        System.out.println("Dequeued: " + aq.dequeue());
+        System.out.println("Dequeued: " + aq.dequeue());
 
-        // More enqueue to check circular behavior
-        q.enqueue(60);
-        q.enqueue(70);
-        q.enqueue(80);
-        q.enqueue(90);
-        q.enqueue(100);
-        q.enqueue(110); // This should trigger resize
+        System.out.println("Queue after dequeue: " + aq);
 
-        System.out.println("Queue after more enqueue: " + q);
-        System.out.println("Size after resize: " + q.size());
+
+        aq.enqueue(60);
+        aq.enqueue(70);
+        aq.enqueue(80);
+        aq.enqueue(90);
+        aq.enqueue(100);
+        aq.enqueue(110);
+
+        System.out.println("Queue after enqueue: " + aq);
+        System.out.println("Size after resize: " + aq.size());
     }
 }

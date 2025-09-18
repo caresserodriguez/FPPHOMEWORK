@@ -56,13 +56,19 @@ public class LinkedListStack {
 
     public static void main(String[] args) {
         LinkedListStack llst = new LinkedListStack();
+
         llst.push(1);
         llst.push(2);
+
         System.out.println(llst);
+
         System.out.println("Size = " + llst.size());
+
         System.out.println(llst.isEmpty());
+
         llst.pop();
         System.out.println(llst);
+
         llst.pop();
         System.out.println(llst);
     }
