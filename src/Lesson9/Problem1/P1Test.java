@@ -11,7 +11,9 @@ public class P1Test {
         aq.enqueue(50);
 
         System.out.println("Queue: " + aq);
+
         System.out.println("Peek: " + aq.peek());
+
         System.out.println("Size: " + aq.size());
 
 

@@ -10,6 +10,7 @@ public class TestP4 {
 
         System.out.println("Next ticket in queue" + sys.viewNextTicket());
 
+
         System.out.println("Processing tickets: ");
         while (!(sys.isEmpty())){
             Ticket processed = sys.processTicket();

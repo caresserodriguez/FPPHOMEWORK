@@ -15,6 +15,7 @@ public class TestP3 {
         browser.forward();
         browser.forward();
 
+
         browser.visit("page3.html");
     }
 }

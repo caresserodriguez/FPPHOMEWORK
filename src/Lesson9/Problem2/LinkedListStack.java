@@ -62,6 +62,7 @@ public class LinkedListStack {
 
         System.out.println(llst);
 
+
         System.out.println("Size = " + llst.size());
 
         System.out.println(llst.isEmpty());
